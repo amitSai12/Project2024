@@ -1,0 +1,106 @@
+body {
+    font-family: "Lucida Console", Monaco, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black; /* White background to match the plain look */
+    margin: 0;
+
+}
+
+.form-container {
+     width: 500px;
+    border: 0px solid black;
+    text-align: center;
+    height: 350px;
+    background-color: white;
+    box-shadow: 15px 15px 0px 0px darkorange;
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    margin-bottom: 15px;
+    position: relative;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.result{
+	color: darkorange;
+    font-weight: bold;
+    text-shadow: 2px 1px gray;
+    font-size: 35px;
+}
+.form-label {
+    position: absolute;
+    top: 5px;
+   left: 390px;
+    background-color: white;
+    font-size: 12px;
+    color: black;
+    pointer-events: none;
+    transition: 0.2s ease;
+}
+
+.form-input {
+    width: 380px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid black; /* Simple border */
+    background: none; /* No background color */
+    font-size: 14px;
+    line-height: 1.5; /* Adjust line height for clarity */
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.form-input:not(:placeholder-shown) + .form-label,
+.form-input:focus + .form-label {
+    top: -15px;
+    left: 5px;
+    font-size: 12px;
+}
+
+
+
+.calculate-btn {
+	font-weight: bold;
+    margin-right: 25px;
+    width: 45px;
+     padding: 5px;
+    border: 2px solid black;
+    background: none; /* No background color */
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+	box-shadow: 4px 4px 0px 0px;
+}
+
+.calculate-btn:hover {
+     background-color: darkorange; /* Light grey background on hover */
+	box-shadow: 3px 3px 3px 0px;
+}
+
+/* .form-output {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background: none;
+    font-size: 14px;
+    line-height: 1.5;
+} */

@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color:black;; /* White background */
+    overflow: hidden; /* Hide overflow from animations */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.button {
+    width: 300px;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    background-color: white; /* Ensure white background for the buttons */
+    border: 0px solid black;
+    cursor: pointer;
+    display:flex;
+    text-decoration: none;
+    margin-top:50px;
+    box-shadow: 8px 8px 0px 0px darkorange;
+}
+
+.button:hover {
+    background-color: darkorange; /* Light grey background on hover */
+     box-shadow: 4px 4px 2px 0px gray;
+}

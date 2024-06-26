@@ -1,0 +1,204 @@
+/* General styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #f9f9f9;
+ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.navbar-container {
+    display: flex; /* Flex container */
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    height: 112px; /* Height of the logo */
+    margin-right: -8px; /* Space between logo and menu */
+}
+
+.navbar-menu {
+    list-style-type: none; /* Remove default list style */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Flexbox for menu items */
+    gap: 20px; /* Space between menu items */
+}
+
+.navbar-menu li {
+    position: relative; /* Relative positioning for dropdowns */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    padding: 6px 20px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: yellowgreen; /* Pink color on hover */
+}
+
+/* Dropdown menu styles */
+.dropdown {
+    cursor: pointer; /* Pointer cursor */
+}
+
+.dropdown-menu {
+    display: none; /* Hide dropdown initially */
+    position: absolute; /* Absolute positioning */
+    background-color: #fff; /* White background */
+    border: 2px solid #000; /* Black border for doodle effect */
+    border-radius: 12px ;
+    box-shadow: 5px 5px 0 #999;/* Shadow effect */
+    margin-top: 5px; /* Space below the parent item */
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+    text-align: left; /* Align text to left */
+    width: 150px; /* Width of the dropdown */
+    z-index: 1000; /* Ensure it’s on top of other content */
+}
+
+.dropdown-menu li {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.dropdown-item {
+	border-radius: 12px;
+    display: block; /* Block display */
+    padding: 10px; /* Padding for clickable area */
+    text-decoration: none; /* Remove underline */
+    color: #000; /* Black text */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.dropdown-item:hover {
+    background-color: #ffeb3b; /* Yellow background on hover */
+    border: 2px solid black;
+}
+
+.container {
+    background: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    border: 2px solid #000;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 10px 10px 0 #999;
+    position: relative;
+    margin-top: 60px;
+      
+}
+
+
+.title {
+    font-size: 24px;
+    margin-bottom: 2em;
+    color: #333333;
+}
+
+/* Form styles */
+.form-group {
+    position: relative;
+    margin-bottom: 2em;
+    text-align: left;
+}
+
+.floating-label {
+    position: absolute;
+    top: -1em;
+    left: 10px;
+    background-color: #ffffff;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.floating-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 14px;
+    background: transparent;
+}
+
+.floating-input:focus {
+    border-color: yellow;
+    outline: none;
+}
+
+.floating-input:focus + .floating-label,
+.floating-input:not(:placeholder-shown) + .floating-label,
+.floating-input:not(:empty) + .floating-label {
+    color: #ff1493;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 12px;
+    display: none;
+  
+}
+
+/* Button styles */
+.submit-button {
+   background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: lowercase;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: -35px;
+    margin-left: 143px;
+}
+
+.submit-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.submit-button:active {
+    background-color: black;
+}
+
+.submit-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 20, 147, 0.5);
+}
+
+/* Responsive styles */
+@media (max-width: 400px) {
+    .container {
+        padding: 1em;
+    }
+
+    .floating-input {
+        width: 100%;
+    }
+}

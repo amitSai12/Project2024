@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 17, 2024, 12:05:09 PM by Hibernate Tools 3.6.2.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.java.quiz.User" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="USER">
+        <id name="id" type="int">
+            <column name="ID"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="name" optimistic-lock="true" type="java.lang.String" unique="false">
+            <column name="NAME"/>
+        </property>
+        <property generated="never" lazy="false" name="age" optimistic-lock="true" type="int" unique="false">
+            <column name="AGE"/>
+        </property>
+        <property generated="never" lazy="false" name="score" optimistic-lock="true" type="int" unique="false">
+            <column name="SCORE"/>
+        </property>
+    </class>
+</hibernate-mapping>
